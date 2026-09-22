@@ -3644,16 +3644,19 @@ font-family: "Inter", Helvetica, sans-serif;
 			}
 
 			.wrapper.spotlight .image {
-				border-radius: 100%;
+				border-radius: 1em;
 				margin: 0 3em 2em 0;
 				width: 22em;
 				overflow: hidden;
+				aspect-ratio: 4 / 3;
 				-ms-flex: 1;
 			}
 
 				.wrapper.spotlight .image img {
-					border-radius: 100%;
+					border-radius: 1em;
 					width: 100%;
+					height: 100%;
+					object-fit: cover;
 				}
 
 			.wrapper.spotlight .content {
@@ -4083,3 +4086,43 @@ font-family: "Inter", Helvetica, sans-serif;
 		}
 
 	}
+/* Selected Work brand tiles */
+	.features article .image.brand {
+		background: #353849;
+		aspect-ratio: 4 / 3;
+		border-radius: 5px;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		margin-left: 0;
+		margin-top: 0;
+		text-align: center;
+		color: #ffffff;
+		font-family: "Inter", sans-serif;
+		font-weight: 700;
+		font-size: 1.5em !important;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		width: 100%;
+	}
+
+		.features article .image.brand.brand-eloquent {
+			background-image: linear-gradient(135deg, #d1b5ff 0%, #6f33b7 100%);
+		}
+
+		.features article .image.brand.brand-tenovos {
+			background-image: linear-gradient(135deg, #2b3762 0%, #5188ff 100%);
+		}
+
+		.features article .image.brand.brand-nstream {
+			background-image: linear-gradient(135deg, #740049 0%, #fe3b1e 100%);
+		}
