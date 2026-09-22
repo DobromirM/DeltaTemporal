@@ -1,0 +1,23 @@
+{
+  "name": "DeltaTemporal",
+  "short_name": "DeltaTemporal",
+  "description": "Software and AI consultancy working with ambitious startups.",
+  "icons": [
+    {
+      "src": "./web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#2e3141",
+  "background_color": "#2e3141"
+}
